@@ -8,6 +8,8 @@ public class prac1 {
     int input=n;
     //ques: count the number of digits for a give number
     // ans: divide n by 10 until n>0 and count the number of division
+      // n/10 means it removes 1 digit from last
+      
     while(n>0){
         n=n/10;
         numofdigits++;
