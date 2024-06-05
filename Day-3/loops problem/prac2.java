@@ -8,6 +8,7 @@ public class prac2 {
     int input=n;
     //ques: sum of  the number of digits for a give number
     // ans: anynum%10=last digit of num and then num/=10
+      // num%10 = gives last digit of num as output
     while(n>0){
         sumofdigits+=n%10;
         n=n/10;
