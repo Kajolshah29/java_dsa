@@ -1,0 +1,39 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int binary_number=sc.nextInt();
+        // binary to decimal    
+        int ans=0;
+        int pw=1; //2^0=1 
+        while(binary_number > 0){
+            int unit_digit=binary_number%10;
+            ans+=(unit_digit*pw);
+            binary_number/=10;
+            pw*=2;
+        }
+        System.out.println(ans);
+    }
+}
+
+
+import java.util.Scanner;
+
+public class decimalToBinary {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int decimal_num = sc.nextInt();
+        int ans = 0; //binary number
+
+        int pw = 1; // powers of 10
+
+        while(decimal_num > 0){
+            int parity = decimal_num % 2;
+            ans += (parity * pw);
+            pw *= 10;
+            decimal_num /= 2;
+        }
+        System.out.println(ans);
+
+    }
+}
