@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Main {
+public class second_largestarr {
     static int largestarr(int[]arr){
         int n=arr.length;
         int max=Integer.MIN_VALUE;
