@@ -3,9 +3,9 @@ public class Main {
     static int pairsum(int[]arr, int target){
         int n=arr.length;
         int ans=0;
-        for(int i=0;i<n;i++){
-            for(int j=i+1;j<n;j++){
-                if(arr[i]+arr[j]==target){
+        for(int i=0;i<n;i++){ // first number
+            for(int j=i+1;j<n;j++){ // second number
+                if(arr[i]+arr[j]==target){ // condition
                     ans++;
                 }
             }
