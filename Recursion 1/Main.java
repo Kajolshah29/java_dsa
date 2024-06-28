@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//print 1 to n natural numbers using recursion in inc and dec order
 public class Main {
     static void printDecreasing(int n){ // 5 4 3 2 1
         //base case
